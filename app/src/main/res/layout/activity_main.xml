@@ -18,25 +18,48 @@
         android:paddingBottom="16dp"
         android:id="@+id/textView" />
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="16dp"
+        android:id="@+id/buttonplus"
+        android:layout_below="@id/textView"
+        android:onClick="increment"/>
+
 
     <TextView
-        android:layout_below="@id/textView"
+        android:layout_below="@id/buttonplus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
         android:textSize="16dp"
         android:textColor="#000000"
+        android:paddingTop="16dp"
         android:paddingBottom="16dp"
         android:id="@+id/quantity_text_view" />
 
-    <TextView
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="16dp"
+        android:id="@+id/buttonminus"
         android:layout_below="@id/quantity_text_view"
+        android:onClick="decrement"/>
+
+
+    <TextView
+        android:layout_below="@id/buttonminus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="price"
         android:textAllCaps="true"
         android:textSize="16dp"
         android:paddingBottom="16dp"
+        android:paddingTop="16dp"
         android:id="@+id/textView_price" />
 
 
